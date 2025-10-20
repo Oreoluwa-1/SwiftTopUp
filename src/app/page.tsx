@@ -1,14 +1,18 @@
 // app/page.tsx
-import Hero from "./component/Hero";
-import WhyChoose from "./component/Whychoose";
-import EssentialFeatures from "./component/EssentialFeatures";
-import OurServices from "./component/Ourservices";
-import Earn from "./component/Earn";
-import FAQSection from "./component/Faq";
-import Footer from "./component/footer";
+import Navbar from "./component/landingpage/Navbar";
+
+import Hero from "./component/landingpage/Hero";
+import WhyChoose from "./component/landingpage/Whychoose";
+import EssentialFeatures from "./component/landingpage/EssentialFeatures"
+import OurServices from "./component/landingpage/Ourservices";
+import Earn from "./component/landingpage/Earn";
+import FAQSection from "./component/landingpage/Faq";
+import Footer from "./component/landingpage/footer";
+
 export default function Home() {
   return (
     <main>
+      <Navbar />
       <Hero/>
       <WhyChoose/>
       <EssentialFeatures/>

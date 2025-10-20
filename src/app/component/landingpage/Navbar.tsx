@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./ui/Button";
+import Button from "../ui/Button";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
