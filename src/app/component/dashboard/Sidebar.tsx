@@ -94,7 +94,7 @@ export default function Sidebar() {
         />
         <div>
           <h2 className="text-sm font-medium text-gray-800">
-            Chukwuemeka Blessing
+            Ifunaya Eze
           </h2>
           <Link
             href="/profile"
