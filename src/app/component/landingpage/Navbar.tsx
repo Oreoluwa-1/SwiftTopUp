@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`relative flex justify-between items-center p-6 bg-white sticky top-0 z-50 transition-shadow duration-300 ${
+      className={` flex justify-between items-center p-6 bg-white sticky top-0 z-50 transition-shadow duration-300 ${
         scrolled ? "shadow-md" : ""
       }`}
     >
