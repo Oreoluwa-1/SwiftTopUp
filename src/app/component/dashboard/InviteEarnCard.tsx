@@ -10,7 +10,7 @@ export default function InviteEarnCard() {
   const [referrals, setReferrals] = useState(15);
   const [earnings, setEarnings] = useState(12000);
 
-  // ✅ Copy referral code function
+  // Copy referral code function
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(referralCode);

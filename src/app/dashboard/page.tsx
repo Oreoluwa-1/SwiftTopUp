@@ -8,41 +8,37 @@ import TransactionHistory from "../component/dashboard/TransactionHistory";
 
 export default function DashboardPage() {
   return (
-    <div>
-     
-
-      {/* First Row */}
+    <div className="w-full px-4 md:px-6 lg:px-8 py-6">
+      {/*First Row*/}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-        {/* Left (2 columns span) */}
+        {/* Overview (Left, 2 columns) */}
         <div className="lg:col-span-2">
           <OverviewCard />
         </div>
 
-        {/* Right */}
-        <InviteEarnCard />
+        {/* Invite & Earn (Right) */}
+        <div>
+          <InviteEarnCard />
+        </div>
       </div>
 
-
-     
       {/* Second Row */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-        {/* Quick Actions */}
+        {/* Quick Actions (Left, 2 columns) */}
         <div className="lg:col-span-2">
           <QuickActions />
         </div>
 
- {/* This Month Stats */}
-        <ThisMonthStats />
+        {/* This Month Stats (Right) */}
+        <div>
+          <ThisMonthStats />
+        </div>
       </div>
 
- {/*Transaction Table */}
-      <TransactionHistory />
+      {/* Transaction Table  */}
+      <div className="mt-8">
+        <TransactionHistory />
+      </div>
     </div>
-       
-      
-
-     
-      
- 
   );
 }
